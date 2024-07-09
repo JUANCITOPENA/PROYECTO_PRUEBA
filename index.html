@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Memoria - Demon Slayer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgVideo">
+        <source src="video/demonslayer.mp4" type="video/mp4">
+    </video>
+
+    <div class="game-container">
+        <h1>Juego de Memoria - Demon Slayer</h1>
+        <div id="timer">Tiempo restante: 60s</div>
+        <div id="gameBoard"></div>
+    </div>
+
+    <div id="gameOverModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Game Over...🤭</h2>
+            <img src="images/game_over.gif" alt="Game Over GIF" class="game-over-gif">
+            <button id="restartGameOver">Reiniciar Juego</button>
+            <button id="closeGameOver">Cerrar Juego</button>
+        </div>
+    </div>
+
+    <div id="winnerModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>¡Has Ganado! 👍✅</h2>
+            <button id="restartWinner">Reiniciar Juego</button>
+            <button id="closeWinner">Cerrar Juego</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
